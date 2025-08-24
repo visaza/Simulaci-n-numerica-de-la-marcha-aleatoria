@@ -1,1 +1,0 @@
-# Simulaci-n-numerica-de-la-marcha-aleatoria
