@@ -6,7 +6,7 @@ y el crecimiento lineal de la varianza con el número de pasos.
 
 ---
 
-## 🚀 Requisitos
+## Requisitos
 
 Antes de correr el programa, se debe tener instalado Python 3 y las siguientes librerías:
 
@@ -16,7 +16,7 @@ pip install numpy matplotlib scipy
 
 ---
 
-## ▶️ Cómo correr el programa
+## Cómo correr el programa
 
 Ejecuta el script principal desde la terminal:
 
@@ -26,7 +26,7 @@ python codigo.py
 
 ---
 
-## 🖥️ Interacción con el programa
+## Interacción con el programa
 
 El script pedirá por consola:
 
@@ -34,11 +34,11 @@ El script pedirá por consola:
 Ingresa un número entero correspondiente al número de pasos:
 ```
 
-👉 Escribe un entero positivo (ejemplo: `25`) y presiona Enter.
+ Escribe un entero positivo (ejemplo: `25`) y presiona Enter.
 
 ---
 
-## 📊 Qué sucede a continuación
+## Qué sucede a continuación
 
 ### 1. Caminata única (N usuario)
 - Simula una única realización de la caminata aleatoria.
