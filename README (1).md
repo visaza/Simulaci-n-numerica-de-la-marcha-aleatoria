@@ -8,7 +8,7 @@ y el crecimiento lineal de la varianza con el número de pasos.
 
 ## 🚀 Requisitos
 
-Antes de correr el programa, asegúrate de tener instalado Python 3 y las siguientes librerías:
+Antes de correr el programa, se debe tener instalado Python 3 y las siguientes librerías:
 
 ```bash
 pip install numpy matplotlib scipy
@@ -21,7 +21,7 @@ pip install numpy matplotlib scipy
 Ejecuta el script principal desde la terminal:
 
 ```bash
-python random_walk.py
+python codigo.py
 ```
 
 ---
@@ -34,7 +34,7 @@ El script pedirá por consola:
 Ingresa un número entero correspondiente al número de pasos:
 ```
 
-👉 Escribe un entero positivo (ejemplo: `12000`) y presiona Enter.
+👉 Escribe un entero positivo (ejemplo: `25`) y presiona Enter.
 
 ---
 
@@ -61,25 +61,4 @@ Ingresa un número entero correspondiente al número de pasos:
 - Genera la gráfica de **varianza vs pasos**.
 
 ---
-
-## 📂 Estructura del repositorio
-
-```
-📁 random-walk-1d
-│── random_walk.py    # Código principal de la simulación
-│── README.md         # Instrucciones y explicación del proyecto
-```
-
----
-
-## ✨ Resultados esperados
-
-1. La distribución de posiciones finales tiende a una **Gaussiana** al aumentar el número de pasos (TCL).  
-2. La **varianza crece linealmente con N**, confirmando la relación con el coeficiente de difusión.  
-
----
-
-## 👩‍💻 Autor
-
-Este código fue desarrollado para la simulación y análisis de **marchas aleatorias 1D** 
-en el contexto de un proyecto académico de Física/Matemáticas Computacionales.
+.  

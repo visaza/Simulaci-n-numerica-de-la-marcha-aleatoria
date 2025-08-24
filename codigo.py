@@ -8,18 +8,7 @@ def caminata_unidimensional(n_pasos: int, salto: float = 1.0) -> float:
     """
     Simula una caminata aleatoria en una dimensión.
     En cada iteración se suma +salto o -salto con igual probabilidad.
-    
-    Parámetros
-    ----------
-    n_pasos : int
-        Número de pasos de la caminata.
-    salto : float, opcional
-        Tamaño de cada incremento (por defecto = 1.0).
-    
-    Retorna
-    -------
-    float
-        Posición final después de n_pasos.
+    Retorna la posición final tras n_pasos.
     """
     posicion = 0.0
     for _ in range(n_pasos):
@@ -28,7 +17,7 @@ def caminata_unidimensional(n_pasos: int, salto: float = 1.0) -> float:
     return posicion
 
 
-# --------------------------- Configuración inicial ----------------------------
+# Configuración inicial 
 num_pasos_global = 10000   # número de pasos en la simulación "grande"
 num_replicas     = 80000   # número de realizaciones para estadística
 delta            = 1.0     # tamaño del paso
@@ -36,7 +25,7 @@ dt               = 1.0     # intervalo temporal por paso
 semilla          = 123     # para reproducibilidad
 generador        = np.random.default_rng(semilla)
 
-# ==================== (1) Una sola caminata con N pasos =======================
+# (1) Una sola caminata con N pasos
 N_usuario = int(input("Ingrese un número de pasos (entero positivo): "))
 posicion_final = caminata_unidimensional(N_usuario, salto=delta)
 
@@ -44,8 +33,8 @@ print("\n--- Ejemplo: una caminata ---")
 print(f"N = {N_usuario}, salto = {delta}")
 print(f"Posición final tras N pasos: {posicion_final:.4f}")
 
-# ================= (2) Distribución de posiciones finales =====================
-# Generar múltiples caminatas de N fijo (num_pasos_global)
+# (2) Distribución de posiciones finales 
+# # Generar múltiples caminatas de N fijo (num_pasos_global)
 trayectorias = generador.choice((-delta, delta), size=(num_replicas, num_pasos_global))
 pos_finales = trayectorias.sum(axis=1)
 
@@ -84,7 +73,7 @@ ax.legend()
 plt.tight_layout()
 plt.show()
 
-# ================== (3) Relación varianza <x²> vs número de pasos =============
+# (3) Relación varianza <x²> vs número de pasos
 
 def generar_muestras(num_pasos: int, repeticiones: int, salto: float = 1.0, rng=None) -> np.ndarray:
     """
