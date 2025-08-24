@@ -61,4 +61,5 @@ Ingresa un número entero correspondiente al número de pasos:
 - Genera la gráfica de **varianza vs pasos**.
 
 ---
+Parte de la documentación fue elaborada con la ayuda de **ChatGPT (modelo GPT-5 de OpenAI)**
 .  
